@@ -1,0 +1,248 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Technical Documentation Page</title>
+</head>
+
+<body>
+  <nav id="navbar">
+    <header>Python Documentation</header>
+    <ul>
+    <li>
+      <a href="#Introduction_to_Python" class="nav-link">Introduction to Python</a></li>
+      <li><a href="#Hello_World!" class="nav-link">Hello World!</a></li>
+      <li><a href="#Variables" class="nav-link">Variables</a></li>
+      <li><a href="#Function_Declaration" class="nav-link">Function Declaration</a></li>
+      <li><a href="#Control_Flow" class="nav-link">Control Flow</a></li>
+      <li><a href="#Operators" class="nav-link">Operators</a></li>
+      <li><a href="#Getting_User_Input" class="nav-link">Getting User Input</a></li>
+      <li><a href="#Adding_Comments_to_Your_Code" class="nav-link">Adding Comments to Your Code</a></li>
+      <li><a href="#Common_Errors_and_Debugging_Techniques" class="nav-link">Common Errors and Debugging Techniques</a></li>
+  </ul>
+    
+    </nav>
+
+  <main id="main-doc">
+    <section class="main-section"id="Introduction_to_Python">
+      <header>Introduction to Python</header>
+        <section>
+          <ul>
+            <p><li>General-purpose, high-level programming language: Offers a clear, concise syntax, making it a popular choice for beginners and experienced developers alike.</li></p>
+          <p><li>Versatile: Used in web development, data science, machine learning, automation, scripting, and more.</li></p>
+          <p><li>Cross-platform: Runs on Windows, macOS, Linux, and other operating systems without modification.</li></p>
+          </ul>
+          <h2>What You Should Already Know</h2>
+          <ul><p><li>Basic computer concepts: File systems, command lines, text editors or IDEs (Integrated Development Environments)</li></p>
+          <p><li>Problem-solving mindset: Ability to break down problems into logical steps</li></p></ul>
+        </section>
+        </section>
+        <section class="main-section"id="Hello_World!">
+          <header>Hello World!</header>
+          <section>
+            
+          <h2>Hello World!</h2>
+          <p>Your first Python program:</p>
+          <p>Python</p>
+          <code><p>print('Hello World!')</p></code>
+        </section>
+        </section>
+         <section class="main-section"id="Variables">
+          <header>Variables</header>
+         <section>
+            
+<h2>Variables</h2>
+<ul><li>Store values: Represent numbers, text, or other data.</li>
+          <li>Declared using names: Follow naming conventions (lower case with underscores).</li></ul>
+          <code><p>name = "Alice"
+age = 30
+is_human = True  # Boolean (True or False)
+pi = 3.14159</p></code>
+<h2>Variable Scope</h2>
+<ul>
+  <li>Local variables: Exist within functions, accessible only within that function.</li><li>Global variables: Defined outside functions, accessible everywhere.</li>
+</ul>
+<h3>Python</h3>
+<code>
+  <p>def greet():
+    message = "Hi!"  # Local variable
+    print(message)
+
+greet()  # Output: "Hi!"
+# print(message)  # Error: NameError: name 'message' is not defined</p></code>
+<h2>Global Variables
+</h2>
+<h3>Python</h3><code>
+<p>global my_variable  # Declare as global to modify from outside
+
+def set_value():
+    global my_variable
+    my_variable = 10
+
+set_value()
+print(my_variable)  
+# Output: 10</p></code>
+</section>
+         </section>
+          <section class="main-section"id="Function_Declaration">
+             <header>Function Declaration</header>
+<section>
+ 
+         <h2>Function Declarations
+</h2>
+<ul><li>Reusable blocks of code: Perform specific tasks.</li>
+<li>Defined using def:
+  <h3>Python</h3>
+  <code><p>def calculate_area(length, width):
+    return length * width
+
+result = calculate_area(5, 3)
+print(result)  # Output: 15</p></code></li></ul>
+<h2>Constants</h2>
+<ul>
+  <li>immutable values: Cannot be changed after assignment.
+    </li><li>Defined using = or capitalized names:
+      <h3>Python</h3>
+      <p>PI = 3.14159
+EMAIL_ADDRESS = "user@example.com"</p>
+    </li>
+</ul>
+          </section>
+
+          </section>
+           <section class="main-section" id="Control_Flow">
+            <header>Control Flow</header>
+            <section>
+                <h2>Controlling the flow of your program</h2>
+                <p>
+                    Control flow statements determine the order in which your
+                    program's instructions are executed. Some common types of
+                    control flow statements include:
+                </p>
+                <ul>
+                    <li>
+                        **if statements:** Execute code based on a condition being
+                        true.
+                    </li>
+                    <li>
+                        **else statements:** Execute code if the condition in an
+                        if statement is false.
+                    </li>
+                    <li>
+                        **for loops:** Repeat a block of code a specific number of
+                        times.
+                    </li>
+                    <li>
+                        **while loops:** Repeat a block of code as long as a condition
+                        is true.
+                    </li>
+                </ul>
+                
+    <section class="main-section" id="Operators">
+            <header>Operators</header>
+            <section>
+                <h2>Performing Calculations and Comparisons</h2>
+                <p>
+                    Operators are symbols used to perform various operations on
+                    values in your program. Here are some common types:
+                </p>
+                <ul>
+                    <li>
+                        Arithmetic operators:** Perform calculations like addition,subtraction, multiplication, division, and modulo.
+                        <ul>
+                            <li>
+                                Example: x = 5 + 3 (result: x is 8)
+                            </li>
+                            <li>
+                                Example:y = 10 // 3 (result: y is 3, floor
+                                division discards the remainder)
+                            </li>
+                            <li>
+                                Example: `z = 10 % 4 (result: z is 2, modulo
+                                gives the remainder)
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        Comparison operators: Compare values and return True or
+                        False.
+                        <ul>
+                            <li>
+                                Example:a = 10 == 5 (result: False)
+                            </li>
+                            <li>
+                                Example: b = 15 > 10 (result: True)
+                            </li>
+                            <li>
+                                Example: c = "hello" != "world" (result: True)
+                            </li>
+                        </ul>
+                    </li>
+                    </ul>
+            </section>
+        </section>
+         <section class="main-section" id="Getting_User_Input">
+            <header>Getting User Input</header>
+            <section>
+                <p>
+                    Python allows you to take input from the user during program
+                    execution using the `input()` function. This function
+                    prompts the user for input and returns it as a string.
+                </p>
+                <h2>Example:</h2>
+                <code>
+                    <p>name = input("Enter your name: ")</p>
+                    <p>print("Hello,", name + "!")</p>
+                </code>
+                 <section class="main-section" id="Adding_Comments_to_Your_Code">
+            <header>Adding Comments to Your Code</header>
+            <section>
+                <p>
+                    Comments are lines of text ignored by Python when running the
+                    program. They are used to explain the code's purpose, logic, or
+                    specific parts. They are essential for:
+                </p>
+                <ul>
+                    <li>Improving code readability and maintainability (for yourself and
+                        others).</li>
+                    <li>Documenting the code's functionality.</li>
+                </ul>
+                <h2>Types of Comments:</h2>
+                <ul>
+                    <li>
+                        Single-line comments: Start with `#` (hash symbol).
+                        <br>
+                        Example:
+                        <code><p># This line calculates the area of a rectangle.</p></code>
+                    </li>
+                    <li>
+                        Multi-line comments: Use triple quotes (''' or """).
+                        <br>
+                        Example:
+                        <code>
+                            <p>"""
+                                This code block calculates the area and perimeter of a
+                                rectangle. It takes the length and width as input
+                                from the user.
+                            """</p>
+                        </code>
+                    </li>
+                </ul>
+            </section>
+        </section>
+
+        <section class="main-section" id="Common_Errors_and_Debugging_Techniques">
+            <header>Common Errors and Debugging Techniques</header>
+            <section>
+                <p>
+                    Even experienced programmers encounter errors in their code
+
+  </main>
+</body>
+
+</html>
