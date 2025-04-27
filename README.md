@@ -23,7 +23,6 @@ Through this project, I practiced:
 
 - HTML5
 - CSS3
-- JavaScript (for navigation functionality)
 
 ## Project Structure
 
