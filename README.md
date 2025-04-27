@@ -27,9 +27,8 @@ Through this project, I practiced:
 
 ## Project Structure
 
-- `technical documentation.html` - The main HTML document with the Python documentation content
+- `index.html` - The main HTML document with the Python documentation content
 - `styles.css` - The CSS file that styles the documentation page
-- `index.js` - JavaScript file for navigation functionality
 
 ## Design Elements
 
